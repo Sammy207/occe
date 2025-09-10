@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,9 +47,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate('/')}>
-            <div className="bg-green-500 p-2 rounded-full">
-              <Leaf className="h-8 w-8 text-white" />
-            </div>
+            <img 
+              src="/occe logo black-02.png"
+              alt="OCCE Lagos Logo" 
+              className="h-12 w-auto"
+            />
             <div>
               <h1 className="text-lg font-bold text-gray-900">OCCE Lagos</h1>
               <p className="text-xs text-gray-600">Climate Change & Circular Economy</p>
